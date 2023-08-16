@@ -1,0 +1,58 @@
+{
+  "books": [
+    {
+      "name": "Slow Horses (Deluxe Edition)",
+      "author": "Mick Herron",
+      "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
+      "price": 14,
+      "rating": "3",
+      "featured": true,
+      "id": 1
+    },
+    {
+      "name": "The Last Thing He Told Me: A Novel Nabil",
+      "author": "Laura Dave",
+      "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
+      "price": 13.99,
+      "rating": "4",
+      "featured": true,
+      "id": 2
+    },
+    {
+      "name": "Eloquent JavaScript, 3rd Edition",
+      "author": "Marijn Haverbeke",
+      "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
+      "price": 23.99,
+      "rating": "2",
+      "featured": false,
+      "id": 4
+    },
+    {
+      "featured": true,
+      "name": "JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language",
+      "author": "David Flanagan ",
+      "thumbnail": "https://m.media-amazon.com/images/I/51hx91tbZeL._SX379_BO1,204,203,200_.jpg",
+      "price": "49",
+      "rating": "5",
+      "id": 5
+    },
+    {
+      "featured": false,
+      "name": "HTML and CSS: Design and Build Websites",
+      "author": "Jon Duckett",
+      "thumbnail": "https://m.media-amazon.com/images/I/41WznOEKmAL._SX396_BO1,204,203,200_.jpg",
+      "price": "9",
+      "rating": "4",
+      "id": 6
+    },
+    {
+      "name": "Learning SQL: Generate, Manipulate, and Retrieve Data",
+      "author": "Alan Beaulieu",
+      "thumbnail": "https://m.media-amazon.com/images/I/41A-KL8Y1vL._SX379_BO1,204,203,200_.jpg",
+      "price": "29",
+      "rating": "5",
+      "featured": false,
+      "id": 7
+    }
+  ]
+}
