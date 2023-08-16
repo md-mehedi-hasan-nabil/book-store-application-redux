@@ -4,8 +4,8 @@ export default function Form() {
   function handleSubmit() {}
 
   return (
-    <div>
-      <div className="p-4 overflow-hidden bg-white shadow-cardShadow rounded-md">
+    <div className="col-span-12 md:col-span-4">
+      <div className="sticky top-14 p-4 overflow-hidden bg-white shadow-cardShadow rounded-md">
         <h4 className="mb-8 text-xl font-bold text-center">
           {/* {status ? "Update Book Information" : "Add New Book"} */}
         </h4>
@@ -14,7 +14,7 @@ export default function Form() {
             <label htmlFor="name">Book Name</label>
             <input
               required
-              className="text-input"
+              className="px-2 py-1 rounded"
               type="text"
               id="input-Bookname"
               // defaultValue={status ? name : ""}
@@ -94,7 +94,9 @@ export default function Form() {
           </div>
 
           <button type="submit" className="submit" id="submit">
-            {status ? "Update Book" : "Add Book"}
+            {/* {status ? "Update Book" : "Add Book"}
+             */}
+            Add Book
           </button>
         </form>
       </div>

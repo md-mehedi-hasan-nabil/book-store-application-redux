@@ -1,22 +1,22 @@
-// import { useDispatch, useSelector } from "react-redux";
+import { BookType } from "../types/types";
 import RatingBar from "./RatingBar";
 
-export default function BookCard({ book }) {
+export default function BookCard({ book }: { book: BookType }) {
+  const { name, author, thumbnail, price, rating, featured } = book || {};
   return (
-    <div className="book-card">
+    <div className="col-span-12 md:col-span-6 flex gap-4 shadow-md rounded-lg overflow-hidden border">
       <img
-        className="h-[240px] w-[170px] object-cover lws-bookThumbnail"
-        // src={thumbnail}
-        src="https://m.media-amazon.com/images/P/B07DZ86WP7.01._SCLZZZZZZZ_SX500_.jpg"
+        className="h-[240px] w-[170px] object-cover"
+        src={thumbnail}
         alt="book"
       />
       <div className="flex-1 h-full pr-2 pt-2 flex flex-col">
         <div className="flex items-center justify-between">
-          {/* {featured ? (
-            <span className="badge-success lws-Badge">featured</span>
+          {featured ? (
+            <span className="px-2 py-1 border-2 border-blue-500 rounded-md text-blue-600 bg-blue-200 capitalize">featured</span>
           ) : (
             <span></span>
-          )} */}
+          )}
           <div className="text-gray-500 space-x-2">
             <button
               // onClick={() => createEditmodeForUpdate(book)}
@@ -58,11 +58,10 @@ export default function BookCard({ book }) {
         </div>
 
         <div className="space-y-2 mt-4 h-full">
-          <h4 className="lws-bookName">{"name"}</h4>
-          <p className="lws-author">{"author"}</p>
-          {/* <RatingBar number={parseInt("rating")} /> */}
-          {/* <RatingBar number={5} /> */}
-          <p className="lws-price">BDT {"price"}</p>
+          <h4 className="text-lg font-semibold line-clamp-2">{name}</h4>
+          <p className="text-base line-clamp-1">{author}</p>
+          <RatingBar number={parseInt(rating)} />
+          <p className="lws-price">BDT {price}৳</p>
         </div>
       </div>
     </div>

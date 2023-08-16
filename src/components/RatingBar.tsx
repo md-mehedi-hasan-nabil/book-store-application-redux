@@ -1,14 +1,12 @@
-import React from "react";
-
 export default function RatingBar({ number = 5 }) {
   return (
-    <div className="lws-stars">
+    <div className="flex">
       {[...Array(number)].map((_, index) => (
         <svg
           key={index}
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="lws-star"
+          className="w-4 h-4 text-yellow-400"
         >
           <path
             fillRule="evenodd"

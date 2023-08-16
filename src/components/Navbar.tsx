@@ -1,21 +1,29 @@
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 // import { useDispatch } from "react-redux";
 
 export default function Navbar() {
-
   function handleChange(value) {
     // dispatch(searchBookByKeyword(value));
   }
 
   return (
-    <nav className="py-4 2xl:px-6">
+    <nav className="py-4">
       <div className="container flex items-center justify-between">
-        <img src={logo} width="150px" className="object-contain" alt="logo" />
+        <Link to="/">
+          <img src={logo} width="150px" className="object-contain" alt="logo" />
+        </Link>
 
         <ul className="hidden md:flex items-center space-x-6">
-          <li className="font-semibold cursor-pointer">Book Store</li>
-          <li className="cursor-pointer">Wishlist</li>
-          <li className="cursor-pointer">My Collection</li>
+          <NavLink to="/">
+            <li>Book Store</li>
+          </NavLink>
+          <NavLink to="/wishlist">
+            <li>Wishlist</li>
+          </NavLink>
+          <NavLink to="/my-collection">
+            <li>My Collection</li>
+          </NavLink>
         </ul>
 
         <form
